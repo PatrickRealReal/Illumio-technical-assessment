@@ -20,6 +20,9 @@ def process_logs(log_filename, lookup_dict):
     with open(log_filename, 'r') as file:
         for line in file:
             parts = line.split()
+            version_number = parts[0]
+            if version_number != '2':
+                continue  
             dst_port = parts[5]
             protocol_num = parts[7]
             protocol = 'tcp' if protocol_num == '6' else 'udp' if protocol_num == '17' else 'icmp' if protocol_num == '1' else 'unknown'
