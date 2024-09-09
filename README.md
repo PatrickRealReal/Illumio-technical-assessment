@@ -5,11 +5,11 @@ Here is the description of my implementation.
 ## Assumptions:
 1.I assume sufficient data: Each log entry should have at least 8 elements after splitting, or else it will be skipped.
 
-2.The script assumes that the logs are whitespace-delimited (line.split())
+2.The script assumes that the logs are whitespace-delimited (line.split()).
 
 3.I assume Python version is 3.x.
 
-4.I assume all the files(lookup_table.csv, flows_log.txt, README.md) are prepared
+4.I assume all the files(lookup_table.csv, flows_log.txt, README.md) are prepared.
 
 5.The only version that is supported is 2.
 
